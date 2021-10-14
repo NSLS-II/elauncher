@@ -1,0 +1,10 @@
+bin/
+db/
+dbd/
+lib/
+elauncherApp/Db/O.*
+elauncherApp/src/O.*
+*~
+elauncherApp/Db/*~
+configure/O.*
+configure/*.local

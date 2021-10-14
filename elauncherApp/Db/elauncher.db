@@ -1,0 +1,11 @@
+record(bo, "elauncherTest") {
+    field(DTYP, "Launcher")
+    #pay attention to the path to your script file (.py or .sh) 
+    #field(OUT,  "@python2 hello.py")
+    field(OUT,  "@sh hello.sh")
+    field(SCAN, "2 second")
+    field(VAL,  "0")
+    field(ZNAM, "Name for zero")
+    field(ONAM, "Name for one")
+}
+

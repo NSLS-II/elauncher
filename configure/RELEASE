@@ -1,0 +1,7 @@
+# RELEASE - Location of external support modules
+
+# EPICS_BASE usually appears last so other apps can override stuff:
+EPICS_BASE=/usr/lib/epics
+
+# create your own RELEASE.local to overwrite EPICS_BASE
+-include $(TOP)/configure/RELEASE.local

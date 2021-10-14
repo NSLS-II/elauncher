@@ -1,0 +1,2 @@
+device(bo, INST_IO, devLauncher, "Launcher")
+variable(launcherVerbose, int)
