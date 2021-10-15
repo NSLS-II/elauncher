@@ -1,9 +1,27 @@
-record(bo, "elauncherTest") {
+#pay attention to the path to your script file (.py or .sh): either relative or absolute path
+ 
+record(bo, "elauncherTestPython") {
     field(DTYP, "Launcher")
-    #pay attention to the path to your script file (.py or .sh) 
-    #field(OUT,  "@python2 hello.py")
-    field(OUT,  "@sh hello.sh")
+    field(OUT,  "@python3 hello.py")
     field(SCAN, "2 second")
+    field(VAL,  "0")
+    field(ZNAM, "Name for zero")
+    field(ONAM, "Name for one")
+}
+
+record(bo, "elauncherTestShell") {
+    field(DTYP, "Launcher")
+    field(OUT,  "@sh hello.sh")
+    field(SCAN, "1 second")
+    field(VAL,  "0")
+    field(ZNAM, "Name for zero")
+    field(ONAM, "Name for one")
+}
+
+record(bo, "elauncherTestCommand") {
+    field(DTYP, "Launcher")
+    field(OUT,  "@ps -ef | grep -i elauncher")
+    field(SCAN, "5 second")
     field(VAL,  "0")
     field(ZNAM, "Name for zero")
     field(ONAM, "Name for one")
